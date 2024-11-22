@@ -9,6 +9,21 @@ body {
   box-sizing: inherit;
 }
 
+
+ul {
+  list-style-type: none; 
+  padding: 0;         
+  margin: 0;            
+}
+
+ul li {
+  background: none;      
+  border: none;           
+  padding: 0;            
+  display: list-item;     
+}
+
+
 .demo__wrap {
   display: flex;
   justify-content: center;
@@ -37,10 +52,11 @@ body {
     }
 
     &__profile-picture {
-      width: 2.5rem; /* 40px */
-      height: 2.5rem; /* 40px */
+      width: 1rem; /* 16px */
+      height: 1rem; /* 16px */
+      // margin-right: 0.25rem; /* 4px */
       border-radius: 50%;
-      margin-right: 0.75rem; /* 12px */
+      object-fit: cover;
     }
 
     &__info {
@@ -78,22 +94,13 @@ body {
       display: flex;
       gap: 0.5rem; /* 8px */
 
-      &__image {
-        width: 100%;
-        max-width: calc(50% - 0.25rem); /* 50% - 4px */
-        height: auto;
-        border-radius: 0.5rem; /* 8px */
-        object-fit: cover;
-      }
+
 
       &-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem; /* 8px */
 
-        &__image {
-          width: 100%;
-        }
       }
     }
   }
@@ -136,8 +143,23 @@ body {
   }
 }
 
+.facebook-post__image {
+  width: 12rem; 
+  height: 10rem; 
+  object-fit: cover; 
+
+}
+
+
+
+
+
+
+
+
 .button-icon {
   width: 1rem; /* 16px */
   height: 1rem; /* 16px */
   margin-right: 0.25rem; /* 4px */
 }
+
