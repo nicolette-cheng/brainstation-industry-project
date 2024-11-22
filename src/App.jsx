@@ -8,6 +8,7 @@ import imgVerify from "/assets/verify.png";
 import imgProfile from "/assets/profile.png";
 import imgPost from "/assets/chihuacoin.png";
 import imgLikeLoveLaugh from "/assets/likelovelaugh.png";
+import imgCommentSection from "/assets/commentsection.png";
 import "./App.scss";
 
 function App() {
@@ -117,6 +118,16 @@ function App() {
               Verify
             </button>
           </div>
+
+          <div className="facebook-post__images">
+          <br />
+            View More Comments
+              <img
+                src={imgCommentSection}
+                alt="CommentSection"
+                className="facebook-post__image"
+              />
+            </div>
         </section>
       </div>
       <FactChecker
