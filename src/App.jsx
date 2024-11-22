@@ -4,7 +4,7 @@ import "./App.scss";
 
 function App() {
   return (
-    <>
+    <div className="demo__wrap">
       <section className="facebook-post">
         <div className="facebook-post__header">
           <div className="facebook-post__header-left">
@@ -15,7 +15,7 @@ function App() {
             />
             <div className="facebook-post__info">
               <p className="facebook-post__author">
-                USA Top News and Around the Globe
+                Dogecoin Enthusiasts Group
               </p>
               <p className="facebook-post__timestamp">11m · 🌎</p>
             </div>
@@ -24,19 +24,18 @@ function App() {
         </div>
         <div className="facebook-post__content">
           <p className="facebook-post__text">
-            :rocket: Big News for Dogecoin Fans! :dog2::moneybag: We’re thrilled
-            to unveil the future of Dogecoin: a brand-new logo design featuring
-            the internet’s most confident underdog… :dog: The Chihuahua! Why the
-            change? The Dogecoin community voted, and it’s official: The
-            Chihuahua represents resilience, attitude, and the ability to bark
-            louder than its market cap. The new design, lovingly nicknamed
-            “Chihuacoin,” will roll out next week. Some exciting features:
-            :feet: Taco Tuesday Bonuses: Double your mining rewards every
-            Tuesday. :taco: :feet: Small Dog, Big Dreams: Inspired by
-            Chihuahuas, we’re aiming for $1 again (yes, really). :feet: Tiny
-            Paws NFT Series: Collect exclusive Chihuahua pawprint NFTs. Comment
-            below: Are you ready to ride this wave? :ocean::dog2::gem:
-            #Chihuacoin #DogeRebrand #CryptoWithAttitude
+            🚀 Big News for Dogecoin Fans! 🐕💰 We’re thrilled to unveil the
+            future of Dogecoin: a brand-new logo design featuring the internet’s
+            most confident underdog… 🐶 The Chihuahua! Why the change? The
+            Dogecoin community voted, and it’s official: The Chihuahua
+            represents resilience, attitude, and the ability to bark louder than
+            its market cap. The new design, lovingly nicknamed “Chihuacoin,”
+            will roll out next week. Some exciting features: 🐾 Taco Tuesday
+            Bonuses: Double your mining rewards every Tuesday. 🌮🐾 Small Dog,
+            Big Dreams: Inspired by Chihuahuas, we’re aiming for $1 again (yes,
+            really). 🐾 Tiny Paws NFT Series: Collect exclusive Chihuahua
+            pawprint NFTs. Comment below: Are you ready to ride this wave?
+            🌊🐕💎 #Chihuacoin #DogeRebrand #CryptoWithAttitude
           </p>
           <div className="facebook-post__images">
             <img
@@ -81,7 +80,7 @@ function App() {
           </button>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
