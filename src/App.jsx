@@ -11,6 +11,16 @@ import imgLikeLoveLaugh from "/assets/likelovelaugh.png";
 import "./App.scss";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleVerifyModalClick = () => {
+    setIsModalOpen(true);
+  };
+
   return (
     <>
       <div className="demo__wrap">
@@ -34,7 +44,7 @@ function App() {
           </div>
 
           <div className="facebook-post__content">
-            <p className="facebook-post__text">
+            <div className="facebook-post__text">
               🚀 Big News for Dogecoin Fans! 🐕💰
               <br /> <br />
               We’re thrilled to unveil the future of Dogecoin: a brand-new logo
@@ -66,7 +76,7 @@ function App() {
               Comment below: Are you ready to ride this wave?
               <br /> <br />
               🌊🐕💎 #Chihuacoin #DogeRebrand #CryptoWithAttitude
-            </p>
+            </div>
 
             <div className="facebook-post__images">
               <img
@@ -108,7 +118,10 @@ function App() {
               <img src={imgShare} alt="Share button" className="button-icon" />
               Share
             </button>
-            <button className="facebook-post__action facebook-post__action--verify">
+            <button
+              className="facebook-post__action facebook-post__action--verify"
+              onClick={handleVerifyModalClick}
+            >
               <img
                 src={imgVerify}
                 alt="Verify button"
@@ -122,10 +135,7 @@ function App() {
       <FactChecker
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        itemType="inventory"
-        itemId={inventory.id}
-        itemName={inventory.item_name}
-        onSuccess={handleDeleteSuccess}
+        onSuccess={() => console.log("Verification Successful")}
       />
     </>
   );
