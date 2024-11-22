@@ -17,10 +17,12 @@ function FactChecker({ isOpen, onClose }) {
           <div className="modal__text-container">
             <h1 className="modal__title">Verify with SmartTrust</h1>
             <p className="modal__description">
-              <b>Note</b>: The community has responded to this post indicating
-              false information. Majority of users are confirming this new
-              design is not official, the original Dogecoin design is the only
-              verified design. Would you like to learn more?
+              <b>Note</b>: This information is generated using AI.
+              <br />
+              <br />
+              From information gathered across the web, results are indicating
+              the original Dogecoin design is the only verified design. Would
+              you like to learn more?
             </p>
           </div>
           <div className="modal__buttons">
