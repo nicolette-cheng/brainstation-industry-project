@@ -4,7 +4,7 @@ import imgLike from "/assets/1.png";
 import imgComment from "/assets/2.png";
 import imgSend from "/assets/3.png";
 import imgShare from "/assets/4.png";
-import imgVerify from "/assets/verify.png";
+import imgVerify from "/assets/magnify.png";
 import imgProfile from "/assets/profile.png";
 import imgPost from "/assets/chihuacoin.png";
 import imgLikeLoveLaugh from "/assets/likelovelaugh.png";
@@ -111,8 +111,8 @@ function App() {
               />
               Comment
             </button>
-            <button className="facebook-post__action facebook-post__action--send">
-              <img src={imgSend} alt="Send button" className="button-icon" />
+            <button className="facebook-post__action facebook-post__action--share">
+              <img src={imgSend} alt="Share button" className="button-icon" />
               Send
             </button>
             <button className="facebook-post__action facebook-post__action--share">
@@ -128,7 +128,7 @@ function App() {
                 alt="Verify button"
                 className="button-icon"
               />
-              Verify
+              SmartTrust
             </button>
           </div>
 
