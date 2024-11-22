@@ -5,10 +5,8 @@ import './App.scss'
 
 function App() {
 
-
   return (
     <>
-
       <section class="facebook-post">
         <div class="facebook-post__header">
           <div class="facebook-post__header-left">
@@ -37,11 +35,11 @@ function App() {
           </div>
         </div>
         <div class="facebook-post__actions">
-        <button class="facebook-post__action facebook-post__action--like"> <img src="1.png" alt="Like" class="button-icon"> Like </button> 
-        <button class="facebook-post__action facebook-post__action--comment"> <img src="2.png" alt="Comment" class="button-icon"> Comment </button> 
-        <button class="facebook-post__action facebook-post__action--share"> <img src="3.png" alt="Share" class="button-icon"> Share </button> 
-        <button class="facebook-post__action facebook-post__action--verify"> <img src="4.png" alt="Verify" class="button-icon"> Verify </button>
-    
+          <button class="facebook-post__action facebook-post__action--like"> <img src="1.png" alt="Like" class="button-icon" /> Like </button>
+          <button class="facebook-post__action facebook-post__action--comment"> <img src="2.png" alt="Comment" class="button-icon" /> Comment </button>
+          <button class="facebook-post__action facebook-post__action--share"> <img src="3.png" alt="Share" class="button-icon" /> Share </button>
+          <button class="facebook-post__action facebook-post__action--verify"> <img src="4.png" alt="Verify" class="button-icon" /> Verify </button>
+
         </div>
       </section>
 
