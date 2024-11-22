@@ -6,6 +6,7 @@ import imgShare from "/assets/4.png";
 import imgVerify from "/assets/verify.png";
 import imgProfile from "/assets/profile.png";
 import imgPost from "/assets/chihuacoin.png";
+import imgLikeLoveLaugh from "/assets/likelovelaugh.png";
 import "./App.scss";
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
               <p className="facebook-post__timestamp">11m · 🌎</p>
             </div>
           </div>
-          <button className="facebook-post__menu-button">...</button>
+          <button className="facebook-post__menu-button">... x</button>
         </div>
 
         <div className="facebook-post__content">
@@ -73,6 +74,16 @@ function App() {
             />
           </div>
         </div>
+
+        <div className="facebook-post__liked">
+            {" "}
+            <img
+              src={imgLikeLoveLaugh}
+              alt="Likelovelaugh"
+              className="likelovelaugh-icon"
+            />
+            Taco Belle the Chihuahua and 1,000,000 others 25 comments 25 shares
+          </div>
 
         <div className="facebook-post__actions">
           <button className="facebook-post__action facebook-post__action--like">
