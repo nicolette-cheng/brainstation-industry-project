@@ -5,40 +5,42 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  box-sizing: inherit;
+}
+
 .demo__wrap {
   display: flex;
   justify-content: center;
-  padding: 9.375rem;
+  padding: 9.375rem; /* 150px */
 }
 
 .facebook-post {
   display: flex;
   flex-direction: column;
   width: 40vw;
-
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
+  border: 0.0625rem solid #ddd; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  padding: 1rem; /* 16px */
+  margin-bottom: 1rem; /* 16px */
   font-family: Arial, sans-serif;
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem; /* 12px */
 
     &-left {
       display: flex;
-      // align-items: center;
     }
 
     &__profile-picture {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem; /* 40px */
+      height: 2.5rem; /* 40px */
       border-radius: 50%;
-      margin-right: 12px;
+      margin-right: 0.75rem; /* 12px */
     }
 
     &__info {
@@ -47,11 +49,11 @@ body {
 
       &__author {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 0.875rem; /* 14px */
       }
 
       &__timestamp {
-        font-size: 12px;
+        font-size: 0.75rem; /* 12px */
         color: #555;
       }
     }
@@ -59,35 +61,35 @@ body {
     &__menu-button {
       background: none;
       border: none;
-      font-size: 16px;
+      font-size: 1rem; /* 16px */
       cursor: pointer;
     }
   }
 
   &__content {
-    margin-bottom: 16px;
+    margin-bottom: 1rem; /* 16px */
 
     &__text {
-      font-size: 14px;
-      margin-bottom: 8px;
+      font-size: 0.875rem; /* 14px */
+      margin-bottom: 0.5rem; /* 8px */
     }
 
     &__images {
       display: flex;
-      gap: 8px;
+      gap: 0.5rem; /* 8px */
 
       &__image {
         width: 100%;
-        max-width: calc(50% - 4px);
+        max-width: calc(50% - 0.25rem); /* 50% - 4px */
         height: auto;
-        border-radius: 8px;
+        border-radius: 0.5rem; /* 8px */
         object-fit: cover;
       }
 
       &-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
+        gap: 0.5rem; /* 8px */
 
         &__image {
           width: 100%;
@@ -99,17 +101,17 @@ body {
   &__actions {
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid #ddd;
-    padding-top: 8px;
+    border-top: 0.0625rem solid #ddd; /* 1px */
+    padding-top: 0.5rem; /* 8px */
 
     &__action {
-      font-size: 14px;
+      font-size: 0.875rem; /* 14px */
       color: #555;
       background: none;
       border: none;
       cursor: pointer;
-      padding: 8px;
-      border-radius: 4px;
+      padding: 0.5rem; /* 8px */
+      border-radius: 0.25rem; /* 4px */
 
       &:hover {
         background: #f0f0f0;
@@ -126,9 +128,16 @@ body {
       &--share {
         color: #ff4500;
       }
+
       &--verify {
         color: #ff4500;
       }
     }
   }
+}
+
+.button-icon {
+  width: 1rem; /* 16px */
+  height: 1rem; /* 16px */
+  margin-right: 0.25rem; /* 4px */
 }

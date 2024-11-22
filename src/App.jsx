@@ -1,5 +1,9 @@
 import { useState } from "react";
 import imgLike from "/assets/1.png";
+import imgComment from "/assets/2.png";
+import imgSend from "/assets/3.png";
+import imgShare from "/assets/4.png";
+// import imgVerify from "/assets/5.png";
 import "./App.scss";
 
 function App() {
@@ -57,27 +61,49 @@ function App() {
             </div>
           </div>
         </div>
+
         <div className="facebook-post__actions">
           <button className="facebook-post__action facebook-post__action--like">
+            <img src={imgLike} alt="Like" className="button-icon" />
+            Like
+          </button>
+          <button className="facebook-post__action facebook-post__action--comment">
+            <img src={imgComment} alt="Like" className="button-icon" />
+            Comment
+          </button>
+          <button className="facebook-post__action facebook-post__action--send">
+            <img src={imgSend} alt="Like" className="button-icon" />
+            Send
+          </button>
+          <button className="facebook-post__action facebook-post__action--share">
+            <img src={imgShare} alt="Like" className="button-icon" />
+            Share
+          </button>
+          {/* <button className="facebook-post__action facebook-post__action--verify">
+            <img src={imgVerify} alt="Like" className="button-icon" />
+            Verify
+          </button> */}
+
+          {/* <button className="facebook-post__action facebook-post__action--like">
             {" "}
             <img src={imgLike} alt="Like" className="button-icon" /> Like{" "}
           </button>
           <button className="facebook-post__action facebook-post__action--comment">
             {" "}
             <img
-              src="2.png"
+              src="public/assets/2.png"
               alt="Comment"
               className="button-icon"
             /> Comment{" "}
           </button>
           <button className="facebook-post__action facebook-post__action--share">
             {" "}
-            <img src="3.png" alt="Share" className="button-icon" /> Share{" "}
+            <img src="public/assets/3.png" alt="Share" className="button-icon" /> Share{" "}
           </button>
           <button className="facebook-post__action facebook-post__action--verify">
             {" "}
-            <img src="4.png" alt="Verify" className="button-icon" /> Verify{" "}
-          </button>
+            <img src="public/assets/4.png" alt="Verify" className="button-icon" /> Verify{" "}
+          </button> */}
         </div>
       </section>
     </div>
