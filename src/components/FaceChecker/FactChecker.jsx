@@ -1,29 +1,28 @@
-function FaceChecker({
+import "./FactChecker.scss";
+import closeIcon from "/assets/closeicon.svg"
+
+function FactChecker({
   isOpen,
   onClose,
-  itemType,
-  itemId,
-  itemName,
-  onSuccess,
 }) {
   if (!isOpen) return null;
 
-  const handleDelete = async () => {
-    try {
-      const endpoint =
-        itemType === "inventory"
-          ? `${apiUrl}/inventories/${itemId}`
-          : `${apiUrl}/warehouses/${itemId}`;
-      const response = await axios.delete(endpoint);
+//   const handleDelete = async () => {
+//     try {
+//       const endpoint =
+//         itemType === "inventory"
+//           ? `${apiUrl}/inventories/${itemId}`
+//           : `${apiUrl}/warehouses/${itemId}`;
+//       const response = await axios.delete(endpoint);
 
-      if (response.status === 204) {
-        onSuccess(); // Callback to refresh list or navigate
-        onClose(); // Close the modal
-      }
-    } catch (error) {
-      console.error(`Error deleting ${itemType} item:`, error);
-    }
-  };
+//       if (response.status === 204) {
+//         onSuccess(); // Callback to refresh list or navigate
+//         onClose(); // Close the modal
+//       }
+//     } catch (error) {
+//       console.error(`Error deleting ${itemType} item:`, error);
+//     }
+//   };
 
   return (
     <div className="modal">
@@ -37,24 +36,21 @@ function FaceChecker({
           />
           <div className="modal__text-container">
             <h1 className="modal__title">
-              Delete {itemName} {itemType}
-              {itemType === "inventory" ? " item?" : "?"}
+              Verify with SmartTrust
             </h1>
             <p className="modal__description">
-              {`Please confirm that you’d like to delete ${itemName} from the
-                               ${
-                                 itemType === "inventory"
-                                   ? " inventory list"
-                                   : " list of warehouses"
-                               }. You won’t be able to undo this action.`}
+              Note: The community has responded to this post indicating false information. Majority of users are
+              confirming this new design is not official, the original Dogecoin design is the only verified design.
+
+              Would you like to learn more?
             </p>
           </div>
           <div className="modal__buttons">
             <button className="button button--secondary" onClick={onClose}>
               Cancel
             </button>
-            <button className="button button--delete" onClick={handleDelete}>
-              Delete
+            <button className="button button--delete">
+              Learn More
             </button>
           </div>
         </div>
@@ -63,4 +59,4 @@ function FaceChecker({
   );
 }
 
-export default FaceChecker;
+export default FactChecker;
