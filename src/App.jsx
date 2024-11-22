@@ -38,17 +38,26 @@ function App() {
             design featuring the internet’s most confident underdog… 🐶 The
             Chihuahua!
             <br /> <br />
-            Why the change? The Dogecoin community voted, and it’s official:
-            The Chihuahua represents resilience, attitude, and the ability to bark
+            Why the change? The Dogecoin community voted, and it’s official: The
+            Chihuahua represents resilience, attitude, and the ability to bark
             louder than its market cap.
             <br /> <br />
             The new design, lovingly nicknamed “Chihuacoin,” will roll out next
             week. Some exciting features:
             <br /> <br />
             <ul>
-              <li>🐾 Taco Tuesday Bonuses: Double your mining rewards every Tuesday. 🌮</li>
-              <li>🐾 Small Dog, Big Dreams: Inspired by Chihuahuas, we’re aiming for $1 again (yes, really).</li>
-              <li>🐾 Tiny Paws NFT Series: Collect exclusive Chihuahua pawprint NFTs.</li>
+              <li>
+                🐾 Taco Tuesday Bonuses: Double your mining rewards every
+                Tuesday. 🌮
+              </li>
+              <li>
+                🐾 Small Dog, Big Dreams: Inspired by Chihuahuas, we’re aiming
+                for $1 again (yes, really).
+              </li>
+              <li>
+                🐾 Tiny Paws NFT Series: Collect exclusive Chihuahua pawprint
+                NFTs.
+              </li>
             </ul>
             <br /> <br />
             Comment below: Are you ready to ride this wave?
@@ -57,7 +66,11 @@ function App() {
           </p>
 
           <div className="facebook-post__images">
-            <img src={imgPost} alt="Post image of Chihuacoin" className="facebook-post__image" />
+            <img
+              src={imgPost}
+              alt="Post image of Chihuacoin"
+              className="facebook-post__image"
+            />
           </div>
         </div>
 
@@ -67,7 +80,11 @@ function App() {
             Like
           </button>
           <button className="facebook-post__action facebook-post__action--comment">
-            <img src={imgComment} alt="Comment button" className="button-icon" />
+            <img
+              src={imgComment}
+              alt="Comment button"
+              className="button-icon"
+            />
             Comment
           </button>
           <button className="facebook-post__action facebook-post__action--send">
@@ -89,8 +106,6 @@ function App() {
 }
 
 export default App;
-
-
 
 {
   /* <button className="facebook-post__action facebook-post__action--like">
